@@ -8,9 +8,12 @@ import ServicesVideo from "./components/ServicesVideo";
 import PriceCTA from "./components/PriceCTA";
 import Occasions from "./components/Occasions";
 import Reviews from "./components/Reviews";
+import SpecialOffer from "./components/SpecialOffer";
+import OrderForm from "./components/OrderForm";
+import Footer from "./components/Footer";
 
 export default function Home() {
-   return (
+  return (
     <main className="min-h-screen">
       <Navbar />
       <Banner />
@@ -21,7 +24,9 @@ export default function Home() {
       <PriceCTA></PriceCTA>
       <Occasions></Occasions>
       <Reviews></Reviews>
+      <SpecialOffer></SpecialOffer>
+      <OrderForm></OrderForm>
+      <Footer></Footer>
     </main>
-  )
-
+  );
 }

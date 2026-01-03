@@ -25,8 +25,27 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
 
-/* Smoother horizontal sliding animation */
+/* ==================== ANIMATIONS ==================== */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Horizontal Sliding Animation - for Occasions section watch */
 @keyframes slideHorizontalSmooth {
   0%, 100% {
     transform: translateX(-20%);
@@ -36,8 +55,41 @@ body {
   }
 }
 
+/* Vertical Sliding Animation Up - for SpecialOffer left watch */
+@keyframes slideVerticalUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/* Vertical Sliding Animation Down - for SpecialOffer right watch */
+@keyframes slideVerticalDown {
+  0%, 100% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+/* ==================== UTILITY CLASSES ==================== */
+
 @layer utilities {
+  /* Horizontal sliding for watch in Occasions section */
   .animate-slide-horizontal {
     animation: slideHorizontalSmooth 8s ease-in-out infinite;
+  }
+  
+  /* Vertical sliding up for SpecialOffer section */
+  .animate-slide-vertical-up {
+    animation: slideVerticalUp 3s ease-in-out infinite;
+  }
+  
+  /* Vertical sliding down for SpecialOffer section */
+  .animate-slide-vertical-down {
+    animation: slideVerticalDown 3s ease-in-out infinite;
   }
 }

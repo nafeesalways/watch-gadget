@@ -44,7 +44,7 @@ export default function Reviews() {
         
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 md:mb-16">
-          <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
             আমাদের কাস্টমার রিভিউ
           </span>
         </h2>
@@ -57,7 +57,7 @@ export default function Reviews() {
               className="flex gap-4 md:gap-6 items-start group"
             >
               {/* Avatar Circle with Image */}
-              <div className={`flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br ${review.bgColor} flex items-center justify-center shadow-lg overflow-hidden group-hover:scale-110 transition-transform duration-300 p-1`}>
+              <div className={`shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-full bg-linear-to-br ${review.bgColor} flex items-center justify-center shadow-lg overflow-hidden group-hover:scale-110 transition-transform duration-300 p-1`}>
                 <div className="relative w-full h-full rounded-full overflow-hidden bg-white">
                   <Image 
                     src={review.avatar}
