@@ -6,6 +6,8 @@ import Features from "./components/Features";
 import WatchCarousel from "./components/WatchCarousel";
 import ServicesVideo from "./components/ServicesVideo";
 import PriceCTA from "./components/PriceCTA";
+import Occasions from "./components/Occasions";
+import Reviews from "./components/Reviews";
 
 export default function Home() {
    return (
@@ -17,6 +19,8 @@ export default function Home() {
       <WatchCarousel></WatchCarousel>
       <ServicesVideo></ServicesVideo>
       <PriceCTA></PriceCTA>
+      <Occasions></Occasions>
+      <Reviews></Reviews>
     </main>
   )
 
